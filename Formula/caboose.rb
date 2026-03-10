@@ -5,16 +5,16 @@ class Caboose < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/kahanscious/caboose/releases/download/v0.1.1/caboose-aarch64-apple-darwin.tar.xz"
-      sha256 "e03e94514bcf371b83c559a5e5fa6482207a8cc8d80851b1c29507f533bb6f8c"
+      sha256 "821535105b4640dacd286c855ba908f17e08aa049df9fef88357b49d64aafb42"
     end
     if Hardware::CPU.intel?
       url "https://github.com/kahanscious/caboose/releases/download/v0.1.1/caboose-x86_64-apple-darwin.tar.xz"
-      sha256 "169bce83212af77f619a28abefbbd152fbcbc9503acda18f82a5ca5bf5d8ca9f"
+      sha256 "6ba3cb9f46f0e836b41b1ff32ab24f296275354206f66472d54424f1ebc43650"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
       url "https://github.com/kahanscious/caboose/releases/download/v0.1.1/caboose-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "ed09c0c4b639acf733303dd5a2d6514debda1eba50355af699de458ac9307de1"
+      sha256 "7bc460d7c60ee9d9b912a4b8d6e3d3fef70092a41593908a5c8d69d5c2637481"
   end
 
   BINARY_ALIASES = {
