@@ -1,20 +1,20 @@
 class Caboose < Formula
   desc "A terminal-native AI coding agent built in Rust"
   homepage "https://trycaboose.dev"
-  version "0.7.0"
+  version "0.7.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kahanscious/caboose/releases/download/v0.7.0/caboose-aarch64-apple-darwin.tar.xz"
-      sha256 "d4c2bb0c4e21018e8161d1eef710fd59bddaf94425842417a238dc5d8d7f7eae"
+      url "https://github.com/kahanscious/caboose/releases/download/v0.7.1/caboose-aarch64-apple-darwin.tar.xz"
+      sha256 "c88b533d6f23f3bf307ed47487c93aa169c295cf552710566894cd452ce31e52"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kahanscious/caboose/releases/download/v0.7.0/caboose-x86_64-apple-darwin.tar.xz"
-      sha256 "dcd77f9beff4797ffb2b911a8e8e4aed705a2bc588637bc07c61fe5eacdb802c"
+      url "https://github.com/kahanscious/caboose/releases/download/v0.7.1/caboose-x86_64-apple-darwin.tar.xz"
+      sha256 "16ed8e5b84fa420dbfb319f69cfd24b4d11c455f0607220780ffd6cd58815025"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/kahanscious/caboose/releases/download/v0.7.0/caboose-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "4d3a693f4aa9b050601fdc579ef326be473cce118b02ef9058d7a3f483c276a0"
+      url "https://github.com/kahanscious/caboose/releases/download/v0.7.1/caboose-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "f6af4dd6691682d843adb9641b6323c354744c06eac2d2e3ad820ace1b82845e"
   end
 
   BINARY_ALIASES = {
