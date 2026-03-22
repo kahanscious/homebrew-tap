@@ -1,19 +1,19 @@
 class CabooseServer < Formula
   desc "The caboose-server application"
-  version "0.7.1"
+  version "0.7.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kahanscious/caboose/releases/download/v0.7.1/caboose-server-aarch64-apple-darwin.tar.xz"
-      sha256 "ecea8a3b266e9d691cf0382d8811960c0fca4b60426e3270184af66b7f3378ad"
+      url "https://github.com/kahanscious/caboose/releases/download/v0.7.2/caboose-server-aarch64-apple-darwin.tar.xz"
+      sha256 "44c2151cff096923729e407a208d29954475b7cf052b9383bd167ead2ec0a7ec"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kahanscious/caboose/releases/download/v0.7.1/caboose-server-x86_64-apple-darwin.tar.xz"
-      sha256 "c1072620ccee8a9b41f78ee617b3151dce884a77d15ca1ee304ac60ec1d588d0"
+      url "https://github.com/kahanscious/caboose/releases/download/v0.7.2/caboose-server-x86_64-apple-darwin.tar.xz"
+      sha256 "c8f2396caf4c89b5d355ac6df8577117ec9295f8ff910d24b61197a9be55fa3f"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kahanscious/caboose/releases/download/v0.7.1/caboose-server-x86_64-unknown-linux-musl.tar.xz"
-    sha256 "2040b27ef2e33e6ee97f98f44564acf427a4594f77af20977a69d98d9e0712d9"
+    url "https://github.com/kahanscious/caboose/releases/download/v0.7.2/caboose-server-x86_64-unknown-linux-musl.tar.xz"
+    sha256 "a300fdf9460bc7169be95398542702db9b6c691f78332d072f41ef5b083f27e1"
   end
 
   BINARY_ALIASES = {
